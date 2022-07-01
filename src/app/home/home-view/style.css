@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./../../../assets/imagenes/fondo.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    cursor:pointer;
+    font-weight: 600;
+}
+span{
+    color: #d11a18
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: .4s;
+}
+nav ul li a:hover {
+    color: #d11a18;
+    opacity: 1;
+}
+.btn{
+    width: auto;
+    font-size: x-small;
+    background-color: #d11a18;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    border: 2px solid #d11a18;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 50px;
+
+}
+h4{
+    color: #d11a18;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+.about{
+    width:100%;
+    
+    background-color: #191919;
+}
+.about img{
+    height:auto;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.about-text{
+    width: 650px;
+    padding-left: 9%;
+}
+
+.about-text h2{
+    color:white ;
+    font-size: 5vh;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: #d11a18;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+.main{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.main img {
+    
+  display: block;
+  margin-left: auto;
+}
+
+.service{
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width:1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.4s;
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #d11a18;
+
+}
+
+.card-footer{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    font-size: x-small;
+    left: 13%;
+}
+.card-footer2{
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    font-size: x-small;
+    right: 13%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.card-footer2:hover{
+   color: #d11a18;
+
+}
+
+h5{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.pra p{
+    color: #d11a38;
+    font-size: 1.0vw;
+    display: flex;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.contact-me{
+    width:100%;
+    height:290px;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me h2{
+   font-size: 50px;
+}
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.circulo img {
+    margin: 10%;
+    width: 15vh;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #d11a18;
+    
+    
+}
+
+.ver-mas a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #d11a18;
+    position: absolute;
+    bottom: 10%;
+    font-size: x-small;
+    right: 13%;
+}
+.boton-ganadores{
+    width:100%;
+    display: flex;
+    position: relative;
+    
+}
+.boton-ganadores a{
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+    margin-top: 15px;
+
+}

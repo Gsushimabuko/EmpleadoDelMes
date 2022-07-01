@@ -1,0 +1,98 @@
+<div class="hero">
+    <nav>
+        <h2 class="logo">EMPLEADO DEL <span>MES</span></h2>
+        <ul>
+            
+
+                <li><a href="#"> VOTAR </a></li>
+                <li><a href="#"> INSCRÍBETE </a></li>
+                <li><a href="#"> ELEGIR GANADORES </a></li>
+                
+            
+            
+        </ul>
+
+        <a href="/votar" class="btn"> VOTAR </a>
+    </nav>
+    
+    <div class="content">
+        <h3> ¡Hola! </h3>
+        <h1> Portal de votación para <br>
+        <span>empleado del mes</span></h1>
+        <h3> Área de Innovación</h3>
+    
+        <div class="newslatter">
+            <button class="btn"> Votar </button> 
+        </div>
+    </div>
+
+    
+</div>
+
+
+<!-- GANADORES START-->
+<div class="service">
+    <div class="contact-me">
+        <h2 style="text-align: center;"> Últimos ganadores </h2>
+    </div>
+
+    <div class="box">
+
+            <div *ngFor="let ganador of ganadores" class="card">
+                <i class="fas fa-bars"> </i>
+                <h5> <span> {{ganador.mes}} </span> | {{ganador.nombre}} {{ganador.apellido}} </h5>
+
+                <div class="circulo">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png">
+                </div>
+
+                <div class="card-footer2">
+                    
+                    <a (click)="eliminarGanador(ganador.id)"> Eliminar </a>
+                    
+                </div>
+
+                <div class="card-footer">
+                    Total de votos: {{ganador.votos}}
+                </div>
+            </div>
+
+            
+            
+    </div>
+
+    <div style="height: 100px;" class="contact-me">
+        
+        <a class="btn"> 
+            Ver todos
+        </a>
+    </div>  
+
+</div>
+
+<!--FIN GANADORES-->
+
+<!-- ABOUT -->
+
+<section class="about">
+    <div class="main">
+        
+        <div class="about-text">
+            <h2>¿Cómo participar?</h2>
+            <h5>Bases</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis hic labore nostrum voluptatem aut nobis asperiores nam vero ex vel dolore consequuntur, commodi, fugiat impedit autem voluptate. Non, et at!</p>
+            <a href="/lista" class="btn"> Inscríbete </a>  
+        </div>
+        <img src="./../../../assets/imagenes/trabajador.jpg" >
+    </div>
+</section>
+
+<!-- FIN ABOUT-->
+
+
+<div class="contact-me">
+    <p>¿Votaciones listas?</p>
+    <a class="btn" href="/votar"> Seleccionar ganador </a>
+</div>
+
+

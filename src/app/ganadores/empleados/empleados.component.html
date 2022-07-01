@@ -1,0 +1,46 @@
+
+<div>
+    
+    <form (ngSubmit)="registrar()">
+        <div>
+            <label>Ganador: </label>
+            <select [(ngModel)]="ganador.id"  name="id"  >
+                <option disabled>---Elegir persona ---</option>
+                    <option *ngFor="let persona of personas" 
+                    [ngValue]="persona.id"
+                    > {{persona.nombre}}</option>
+            </select>
+        </div>
+        <div>
+            <label>Mes: </label>
+            <select [(ngModel)]="ganador.mes"  name="mes"  >
+                <option disabled>---Elegir mes ---</option>
+                    <option *ngFor="let mes of meses" 
+                    [ngValue]="mes"
+                    > {{mes}}</option>
+            </select>
+        </div>
+
+
+        <div>
+            
+            <label>Cantidad de votos:  </label>
+            <input placeholder="Enumere los votos" type="number" name="votos"
+            [(ngModel)]="ganador.votos"
+            >
+                
+        </div>
+        <button type="submit">
+            Registrar
+        </button>
+        
+    </form>
+</div>
+
+<div style="color: green;">
+    {{mensaje}}
+</div>
+
+<a href="/"> volver </a>
+
+

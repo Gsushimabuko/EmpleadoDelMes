@@ -1,0 +1,74 @@
+
+<a href="/">volver</a>
+
+<div>
+    
+    <form (ngSubmit)="guardar()">
+    
+        <div>
+            <label>Nombre:  </label>
+            <input placeholder="nombre" type="text" name="nombre"
+            [(ngModel)]="persona.nombre"
+            >     
+        </div>
+        <div>
+            <label>Apellido:  </label>
+            <input placeholder="apellido" type="text" name="apellido"
+            [(ngModel)]="persona.apellido"
+            >     
+        </div>
+        <div>
+            <label>Edad:  </label>
+            <input placeholder="edad" type="number" name="edad"
+            [(ngModel)]="persona.edad"
+            >     
+        </div>
+        <div>
+            <label>Puesto:  </label>
+            <input placeholder="puesto" type="text" name="puesto"
+            [(ngModel)]="persona.puesto"
+            >     
+        </div>
+
+
+
+        <button type="submit">
+            Registrar
+        </button>
+        
+    </form>
+</div>
+
+
+
+
+
+
+
+
+<p>
+    <b>lista</b>
+</p>
+<hr>
+
+<div>
+    <table>
+       
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Puesto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas">
+                <td> {{persona.nombre}} </td>
+                <td> {{persona.apellido}} </td>
+                <td> {{persona.edad}} </td>
+                <td> {{persona.puesto}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
